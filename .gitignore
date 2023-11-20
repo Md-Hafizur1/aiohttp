@@ -1,10 +1,10 @@
-# .gitignore
+.gitignore
 
 # Ignore core settings file
 core/settings.py
 
 # Ignore environment variable file
-.env
+.venv
 
 # Other common Python and project-specific ignores
 __pycache__/
