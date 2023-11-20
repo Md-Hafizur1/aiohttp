@@ -1,0 +1,25 @@
+myaiohttpproject/
+|-- core/
+|   |-- __init__.py
+|   |-- settings.py
+|   |-- routers.py
+|   |-- middleware.py
+|   |-- db.py
+|   |-- handlers.py
+|-- apps/
+|   |-- __init__.py
+|   |-- user/
+|       |-- __init__.py
+|       |-- forms.py
+|       |-- views.py
+|       |-- routes.py
+|   |-- another_app/
+|       |-- __init__.py
+|       |-- forms.py
+|       |-- views.py
+|       |-- routes.py
+|-- templates/
+|   |-- index.html
+|   |-- profile.html
+|-- venv/
+|-- run.py
