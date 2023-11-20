@@ -39,4 +39,11 @@ class DatabaseHandler:
         self.cursor.execute(insert_query, tuple(data.values()))
         self.connection.commit()
 
+    async def run_query(self, query, params=None):
+        def _execute():
+            self.cursor.execute(query, params)
+            self.connection.commit()
+
+        await self.loop.run_in_executor(None, _execute)
+
 __all__ = ['DatabaseHandler']
